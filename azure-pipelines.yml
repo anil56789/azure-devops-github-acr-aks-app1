@@ -37,3 +37,8 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
+      # Before
+      imageRepository: 'app1nginx'
+
+# After
+  imageRepository: 'app1/app1nginx' 
